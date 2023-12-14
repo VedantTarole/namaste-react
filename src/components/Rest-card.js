@@ -8,10 +8,10 @@ const Cards = (props) => {
         className="res-logo"
         src={CDN_url + resData.info.cloudinaryImageId}
       />
-      <h3>{resData.info.name}</h3>
-      <h4>{resData.info.cuisines.join(", ")}</h4>
-      <h5>{resData.info.avgRating + " stars"}</h5>
-      <h6>{resData.info.costForTwo}</h6>
+      <h2>{resData.info.name}</h2>
+      <p className="cuisines">{resData.info.cuisines.join(", ")}</p>
+      <p>{resData.info.avgRating + " stars"}</p>
+      <p>{resData.info.costForTwo}</p>
     </div>
   );
 };
